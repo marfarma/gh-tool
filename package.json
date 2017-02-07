@@ -1,0 +1,47 @@
+{
+  "name": "github-tool",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jshint -c .jshintrc index.js app/**/*.js test/index_spec.js && make test",
+    "build": "mkdir -p dist && browserify --debug index.js -o dist/index.js -s index"
+  },
+  "author": "Pauli Price",
+  "license": "MIT",
+  "dependencies": {
+    "github-api": "^3.0.0",
+    "indexeddbshim": "^2.2.1",
+    "polyhedron": "github:marfarma/Polyhedron.js",
+    "pouchdb": "^6.1.1",
+    "pouchdb-all-dbs": "^1.0.2",
+    "uuid": "^3.0.1"
+  },
+  "devDependencies": {
+    "beefy": "~2.1.8",
+    "bluebird": "~3.4.7",
+    "browserify": "~13.3.0",
+    "browserify-shim": "~3.8.12",
+    "chai": "~3.5.0",
+    "chai-as-promised": "~6.0.0",
+    "istanbul": "~0.4.5",
+    "jasmine-core": "^2.5.2",
+    "jshint": "~2.9.4",
+    "karma": "~1.4.0",
+    "karma-chrome-launcher": "~2.0.0",
+    "karma-coffee-preprocessor": "~1.0.1",
+    "karma-firefox-launcher": "~1.0.0",
+    "karma-html2js-preprocessor": "~1.1.0",
+    "karma-jasmine": "~1.1.0",
+    "karma-phantomjs-launcher": "~1.0.2",
+    "karma-requirejs": "~1.1.0",
+    "karma-script-launcher": "~1.0.0",
+    "mocha": "~3.2.0",
+    "mocha-phantomjs": "~4.1.0",
+    "q": "~1.4.1",
+    "requirejs": "~2.3.2",
+    "ua-parser-js": "~0.7.12",
+    "watchify": "~3.8.0",
+    "when": "~3.7.7"
+  }
+}
